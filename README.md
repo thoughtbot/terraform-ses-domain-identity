@@ -7,7 +7,10 @@ Major features:
 * Creates an SNS topic for bounces and complaints
 * Validates the domain identity using Route 53 record sets
 * Adds DKIM validates using Route 53 record sets
-* Includes optional delegated authorized sending to other AWS accounts
+* Includes optional [delegated authorized sending] to other AWS accounts
+
+[SES domain identity]: https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html#verify-domain-procedure
+[delegated authorized sending]: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization.html
 
 ## Example
 
@@ -15,10 +18,10 @@ Major features:
 module "domain_identity" {
   source = "git@github.com:thoughtbot/terraform-ses-domain-identity.git?ref=v0.1.0"
 
-  domain              = "example.com"
+  domain = "example.com"
 
   # Set to false if you want to manually validate DNS and set up DKIM
-  create_records      = true
+  create_records = true
 
   # Optional; other AWS accounts which should be allowed to use this identity
   authorized_accounts = ["123456789083", "234567890834"]
