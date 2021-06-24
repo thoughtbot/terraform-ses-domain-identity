@@ -16,7 +16,7 @@ Major features:
 
 ```
 module "domain_identity" {
-  source = "git@github.com:thoughtbot/terraform-ses-domain-identity.git?ref=v0.1.0"
+  source = "git@github.com:thoughtbot/terraform-ses-domain-identity.git?ref=v0.2.0"
 
   domain = "example.com"
 
