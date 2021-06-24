@@ -93,6 +93,6 @@ data "aws_route53_zone" "domain" {
 }
 
 locals {
-  name        = join("-", concat(var.namespace, split(var.domain, ".")))
+  name        = join("-", concat(var.namespace, split(".", var.domain)))
   zone_domain = coalesce(var.zone_domain, var.domain)
 }
