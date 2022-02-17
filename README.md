@@ -40,8 +40,8 @@ module "domain_identity" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws.identity"></a> [aws.identity](#provider\_aws.identity) | 3.59.0 |
-| <a name="provider_aws.route53"></a> [aws.route53](#provider\_aws.route53) | 3.59.0 |
+| <a name="provider_aws.identity"></a> [aws.identity](#provider\_aws.identity) | ~> 3.0 |
+| <a name="provider_aws.route53"></a> [aws.route53](#provider\_aws.route53) | ~> 3.0 |
 
 ## Modules
 
@@ -81,3 +81,29 @@ No modules.
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the created domain identity |
 | <a name="output_notifications_topic_arn"></a> [notifications\_topic\_arn](#output\_notifications\_topic\_arn) | ARN of the SNS topic created for complaints and bounces |
 <!-- END_TF_DOCS -->
+
+## Contributing
+
+Please see [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## License
+
+These modules are Copyright © 2021 Joe Ferris and thoughtbot. It is free
+software, and may be redistributed under the terms specified in the [LICENSE]
+file.
+
+[LICENSE]: ./LICENSE
+
+About thoughtbot
+----------------
+
+![thoughtbot](https://thoughtbot.com/brand_assets/93:44.svg)
+
+These modules are maintained and funded by thoughtbot, inc. The names and logos
+for thoughtbot are trademarks of thoughtbot, inc.
+
+We love open source software! See [our other projects][community] or [hire
+us][hire] to design, develop, and grow your product.
+
+[community]: https://thoughtbot.com/community?utm_source=github
+[hire]: https://thoughtbot.com/hire-us?utm_source=github
