@@ -40,8 +40,8 @@ module "domain_identity" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws.identity"></a> [aws.identity](#provider\_aws.identity) | 4.23.0 |
-| <a name="provider_aws.route53"></a> [aws.route53](#provider\_aws.route53) | 4.23.0 |
+| <a name="provider_aws.identity"></a> [aws.identity](#provider\_aws.identity) | ~> 4.0 |
+| <a name="provider_aws.route53"></a> [aws.route53](#provider\_aws.route53) | ~> 4.0 |
 
 ## Modules
 
