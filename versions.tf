@@ -4,7 +4,6 @@ terraform {
     aws = {
       configuration_aliases = [aws.identity, aws.route53]
       source                = "hashicorp/aws"
-      version               = "~> 4.0"
     }
   }
 }
